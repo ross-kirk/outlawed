@@ -1,4 +1,4 @@
-// Ajustá estos tipos a los que uses en tu proyecto:
+// Adjust these types to the ones you use in your project:
 export type Show = {
   title: string;
   date: string; // ISO YYYY-MM-DD

@@ -64,7 +64,7 @@ const showVideo = Boolean(latest && youTubeId);
             </p>
           </div>
 
-          {/* Botón por si el embed está restringido en mobile */}
+          {/* Button in case the embed is restricted on mobile */}
           {links.youtube && (
             <a
               href={links.youtube}
@@ -72,13 +72,13 @@ const showVideo = Boolean(latest && youTubeId);
               rel="noopener noreferrer"
               class="text-xs px-2 py-1 rounded bg-muted text-muted-foreground hover:text-foreground"
             >
-              Abrir en YouTube
+              Open on YouTube
             </a>
           )}
         </div>
       </div>
     ) : (
-      /* Cover por defecto */
+      /* Default cover */
       <div class="flex items-start gap-4 p-4">
         <div class="relative group">
           {cover && (

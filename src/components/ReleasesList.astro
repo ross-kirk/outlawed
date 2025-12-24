@@ -10,7 +10,7 @@ interface Release {
 }
 const { releases = [] as Release[] } = Astro.props;
 
-// Ordenar DESC por releaseDate (vacías al final)
+// Sort DESC by releaseDate (empty ones at the end)
 const sorted = [...releases].sort((a, b) => {
   const ta = a.releaseDate ? new Date(a.releaseDate).getTime() : -Infinity;
   const tb = b.releaseDate ? new Date(b.releaseDate).getTime() : -Infinity;

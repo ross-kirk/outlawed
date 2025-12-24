@@ -15,7 +15,7 @@ const { date, city, country, venue, tickets, available }: Props = Astro.props;
 
 const d = new Date(date);
 
-// formato en español
+// format in English
 const weekday = new Intl.DateTimeFormat("en-GB", { weekday: "short" })
   .format(d)
   .toUpperCase();
@@ -24,7 +24,7 @@ const month = new Intl.DateTimeFormat("en-GB", { month: "short" })
   .format(d)
   .toUpperCase();
 
-// bandera dinámica: <span class="fi fi-ar"></span>
+// dynamic flag: <span class="fi fi-ar"></span>
 const cc = (country ?? "").toLowerCase();
 const flagClass = cc ? `fi fi-${cc}` : null;
 ---

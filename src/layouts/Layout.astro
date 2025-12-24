@@ -12,7 +12,7 @@ interface Props {
 
 const { theme, title, description, font = "modern" }: Props = Astro.props;
 
-// Mapa: preset -> URL de Google Fonts (solo la necesaria)
+// Map: preset -> Google Fonts URL (only the necessary one)
 const FONT_LINKS: Record<FontPreset, string> = {
   modern:
     "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap",
@@ -29,7 +29,7 @@ const FONT_LINKS: Record<FontPreset, string> = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <!-- Carga condicional de la fuente elegida -->
+    <!-- Conditional loading of the chosen font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href={FONT_LINKS[font]} rel="stylesheet" />

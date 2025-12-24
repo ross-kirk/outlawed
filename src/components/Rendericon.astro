@@ -2,9 +2,9 @@
 import { ICON_MAP } from "../constants/icons";
 
 interface Props {
-  name: string; // nombre de la red: instagram, facebook, etc.
-  size?: number; // tamaño opcional
-  class?: string; // estilos opcionales extra
+  name: string; // network name: instagram, facebook, etc.
+  size?: number; // optional size
+  class?: string; // optional extra styles
 }
 
 const { name, size = 22, class: className = "" }: Props = Astro.props;

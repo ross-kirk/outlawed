@@ -11,12 +11,12 @@ import type { Theme, FontPreset } from "../types/theme";
 import { isTheme } from "../types/theme";
 import { isValidShow, isValidRelease, hasBooking, isValidLink } from "../utils/guards";
 
-// theme & font seguros
+// safe theme & font
 const font: FontPreset = (site?.config?.font as FontPreset) ?? "modern";
 const theme: Theme = isTheme(site?.config?.theme) ? site.config.theme : "dark";
 const artist = site?.artist ?? {};
 
-// normalizo y filtro datos
+// normalize and filter data
 const allShows = Array.isArray(site?.shows)
   ? site.shows.filter(isValidShow)
   : [];
