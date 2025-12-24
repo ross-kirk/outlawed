@@ -1,91 +1,57 @@
 {
   "config": {
-    "title": "Artistree Landing",
-    "description": "Landind en Astro",
-    "theme": "violet",
+    "title": "The Outlawed",
+    "description": "Homepage of the Scottish Rock band, The Outlawed",
+    "theme": "dark",
     "font": "modern",
-    "copyright": "© 2025 Franco Suárez"
+    "copyright": "© 2026 The Outlawed"
   },
   "artist": {
-    "name": "Singer Artist",
-    "description": "Cantante y compositor de música indie.",
-    "bio": "Creando musica desde siempre",
+    "name": "The Outlawed",
+    "description": "STREAM LONG WAY HOME NOW!",
+    "bio": "Est. 2012",
     "picture": "/img/profile.webp"
   },
   "socials": {
-    "instagram": "https://instagram.com/franco",
-    "facebook": "https://facebook.com/franco",
-    "x": "https://x.com/franco",
-    "youtube": "https://youtube.com/franco",
-    "tiktok": "https://www.tiktok.com/@tuusuario"
+    "instagram": "https://instagram.com/theoutlawedofficial",
+    "facebook": "https://facebook.com/TheOutlawedBandUK",
+    "x": "https://x.com/theoutlaweduk",
+    "youtube": "https://youtube.com/@theoutlaweduk",
+    "tiktok": "https://www.tiktok.com/@the.outlawed"
   },
   "booking": {
-    "email": "booking@artistree.link",
-    "phone": "+54 911 2345 6789"
+    "email": "ross@theoutlawed.com"
   },
   "shows": [
     {
-      "title": "Bailaso",
-      "date": "2025-09-12",
-      "city": "Córdoba",
-      "country": "AR",
-      "venue": "Club Paraguay",
-      "tickets": "https://mipass.com/entradas/xyz",
-      "available": true
-    },
-    {
-      "title": "Bailaso",
-      "date": "2025-10-05",
-      "city": "Madrid",
-      "country": "ES",
-      "venue": "Sala Caracol",
-      "tickets": "https://mipass.com/entradas/xyz",
+      "title": "None",
+      "date": "2025-12-25",
+      "city": "Glasgow",
+      "country": "GB",
+      "venue": "None",
+      "tickets": "https://example.com",
       "available": false
     }
   ],
   "releases": [
     {
-      "title": "Noche Eterna",
-      "album": "Noche Eterna Album",
-      "releaseDate": "2025-08-15",
-      "cover": "/img/covers/cover1.webp",
+      "title": "Long Way Home",
+      "album": "Long Way Home EP",
+      "releaseDate": "2015-11-06",
+      "cover": "/img/covers/cover2.webp",
       "links": {
-        "spotify": "https://open.spotify.com/track/...",
-        "applemusic": "https://music.apple.com/...",
-        "youtube": "https://www.youtube.com/watch?v=VxGW_AQwWfo"
-      }
-    },
-    {
-      "title": "Amanecer",
-      "album": "Noche Eterna Album",
-      "releaseDate": "2025-05-02",
-      "cover": "/img/covers/cover1.webp",
-      "links": {
-        "spotify": "https://open.spotify.com/track/...",
-        "applemusic": "https://music.apple.com/...",
-        "youtube": "https://www.youtube.com/watch?v=VxGW_AQwWfo"
+        "spotify": "https://open.spotify.com/album/1K8j2rXjhfOI8nUv0YL6nR",
+        "applemusic": "https://music.apple.com/us/album/long-way-home-ep/1055115341",
+        "youtube": "https://www.youtube.com/watch?v=ebWSBeSQly8&list=OLAK5uy_lIwG2Q89v1G5KpF94BPlfdln-PXeSOLfU&pp=8AUB"
       }
     }
   ],
   "links": [
     {
-      "label": "Instagram Persona",
-      "description": "Perfil personal de Instagram",
-      "url": "https://open.spotify.com/artist/...",
+      "label": "Linktree",
+      "description": "more links here",
+      "url": "https://linktr.ee/theoutlawedband",
       "icon": "website"
-    },
-    {
-      "label": "Instagram Productora",
-      "description": "Perfil de Instagram de la productora",
-      "url": "https://music.apple.com/artist/...",
-      "icon": "instagram",
-      "cover": "/img/profile.webp"
-    },
-    {
-      "label": "YouTube",
-      "description": "Canal de YouTube del artista",
-      "url": "https://www.youtube.com/channel/...",
-      "icon": "youtube"
     }
   ]
 }
