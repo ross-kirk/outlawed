@@ -16,11 +16,11 @@ const { date, city, country, venue, tickets, available }: Props = Astro.props;
 const d = new Date(date);
 
 // formato en español
-const weekday = new Intl.DateTimeFormat("es-AR", { weekday: "short" })
+const weekday = new Intl.DateTimeFormat("en-GB", { weekday: "short" })
   .format(d)
   .toUpperCase();
-const day = new Intl.DateTimeFormat("es-AR", { day: "2-digit" }).format(d);
-const month = new Intl.DateTimeFormat("es-AR", { month: "short" })
+const day = new Intl.DateTimeFormat("en-GB", { day: "2-digit" }).format(d);
+const month = new Intl.DateTimeFormat("en-GB", { month: "short" })
   .format(d)
   .toUpperCase();
 
@@ -64,8 +64,8 @@ const flagClass = cc ? `fi fi-${cc}` : null;
           <a
             href={tickets!}
             class="inline-flex items-center justify-center w-10 h-10 bg-foreground/10 hover:bg-foreground/20 backdrop-blur-xl text-green-400 rounded-full transition-all duration-200 hover:scale-110 border border-white/20"
-            title="Comprar tickets"
-            aria-label="Comprar tickets"
+            title="Buy tickets"
+            aria-label="Buy tickets"
           >
             <TicketsIcon size={18} />
           </a>
@@ -75,7 +75,7 @@ const flagClass = cc ? `fi fi-${cc}` : null;
       {
         tickets && !available && (
           <span class="inline-flex text-sm items-center gap-2 px-3 py-2 rounded-xl bg-muted text-muted-foreground shrink-0">
-            <span>Agotado</span>
+            <span>Sold Out</span>
           </span>
         )
       }
