@@ -19,11 +19,9 @@ const {
   latest,
 }: Props = Astro.props;
 
-/** Extrae un ID válido de YouTube (watch, youtu.be, shorts, embed, music) y limpia params extra */
 function getYouTubeId(url?: string | null): string | null {
   if (!url) return null;
   try {
-    // quita parámetros “si” u otros trackers
     const clean = url.replace(/(\?|\&)si=[^&]+/g, "");
     const u = new URL(clean);
     const host = u.hostname.replace(/^m\./, ""); // m.youtube.com -> youtube.com

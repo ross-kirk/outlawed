@@ -53,15 +53,13 @@ const { name, bio, description, links = {}, picture }: Props = Astro.props;
     if (shareButton) {
       shareButton.addEventListener('click', async () => {
         try {
-          // Verificar si el navegador soporta Web Share API
           if (navigator.share && navigator.canShare) {
             const shareData = {
               title: document.title,
-              text: 'Echa un vistazo a este perfil de artista',
+              text: 'Check out this artist profile',
               url: window.location.href
             };
             
-            // Verificar si los datos son válidos para compartir
             if (navigator.canShare(shareData)) {
               await navigator.share(shareData);
               return;
@@ -72,7 +70,6 @@ const { name, bio, description, links = {}, picture }: Props = Astro.props;
           if (navigator.clipboard && window.isSecureContext) {
             await navigator.clipboard.writeText(window.location.href);
           } else {
-            // Fallback para contextos no seguros
             const textArea = document.createElement('textarea');
             textArea.value = window.location.href;
             document.body.appendChild(textArea);
@@ -81,17 +78,15 @@ const { name, bio, description, links = {}, picture }: Props = Astro.props;
             document.body.removeChild(textArea);
           }
           
-          // Mostrar feedback visual temporal
           const originalContent = shareButton.innerHTML;
-          shareButton.innerHTML = '<span class="text-green-400 text-sm">¡Copiado!</span>';
+          shareButton.innerHTML = '<span class="text-green-400 text-sm">Copied!</span>';
           setTimeout(() => {
             shareButton.innerHTML = originalContent;
           }, 2000);
           
         } catch (error) {
           if (typeof error === 'object' && error !== null && 'name' in error && (error as { name?: string }).name !== 'AbortError') {
-            console.error('Error al compartir:', error);
-            // Mostrar feedback de error
+            console.error('Sharing error:', error);
             const originalContent = shareButton.innerHTML;
             shareButton.innerHTML = '<span class="text-red-400 text-sm">Error</span>';
             setTimeout(() => {
