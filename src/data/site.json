@@ -22,17 +22,7 @@
   "booking": {
     "email": "ross@theoutlawed.com"
   },
-  "shows": [
-    {
-      "title": "None",
-      "date": "2025-12-25",
-      "city": "Glasgow",
-      "country": "GB",
-      "venue": "None",
-      "tickets": "https://example.com",
-      "available": false
-    }
-  ],
+  "shows": [],
   "releases": [
     {
       "title": "Long Way Home",
